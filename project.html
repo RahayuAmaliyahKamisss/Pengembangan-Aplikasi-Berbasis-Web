@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Struktur Website</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: rgb(236, 232, 232);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000000;
+            padding: 2em;
+        }
+        .logo {
+            height: 50px;
+            width: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 1em;
+        }
+        nav a {
+            color: rgb(243, 239, 239);
+            text-decoration: none;
+            padding: 0.5em 1em;
+        }
+        .auth-links {
+            display: flex;
+            gap: 1em;
+        }
+        .auth-links a {
+            color: rgb(218, 213, 213);
+            text-decoration: none;
+            padding: 0.5em 1em;
+        }
+        main {
+            display: flex;
+            padding: 1em;
+        }
+        section {
+            flex: 3;
+            background-color: #302222;
+            margin-right: 1em;
+            padding: 1em;
+            border-radius: 8px;
+        }
+        .article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        .article-item {
+            display: flex;
+            align-items: center;
+            background-color: #444;
+            padding: 1em;
+            border-radius: 8px;
+        }
+        .article-item img {
+            width: 50px;
+            height: 50px;
+            margin-right: 1em;
+        }
+        aside {
+            flex: 1;
+            background-color: #302222;
+            padding: 1em;
+            border-radius: 8px;
+            margin-left: 1em;
+        }
+        .search-box {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+        }
+        footer {
+            background-color: #000000;
+            color: rgb(236, 226, 226);
+            text-align: left;
+            padding: 0.5em;
+            margin-top: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="2.jpeg" alt="Logo" class="logo">
+        <nav>
+            <a href="#">Contact</a>
+            <a href="#">Home</a>
+            <a href="#">Service</a>
+        </nav>
+        <div class="auth-links">
+            <a href="#" class="login">Log In</a>
+            <a href="#" class="sign-in">Sign In</a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome To Artikel Indonesia</h2>
+            <div class="article-list">
+                <div class="article-item">
+                    <img src="Ekonom Sebut Daya Beli Masyarakat Indonesia Menurun, Inilah yg Terjadi.jpeg" alt="Artikel 1">
+                    <div>Ekonom Sebut Daya Beli Masyarakat Indonesia Menurun, Inilah Yang Terjadi</div>
+                </div>
+                <div class="article-item">
+                    <img src="Mutu Pendidikan Ditingkatkan, Pemda Buteng Bakal Bangun Sarana Pendidikan.jpeg" alt="Artikel 2">
+                    <div>Mutu Pendidikan Ditingkatkan, Pemda Buteng Bakal Bangun Sarana Pendidikan</div>
+                </div>
+                <div class="article-item">
+                    <img src="sertifikasi iso, sertifikasi iso 9001, sertifikasi iso 14001, sertifikasi iso murah, sertifikasi iso 22000, sertifikasi iso 27001, sertifikasi iso 17025, sertifikasi iso 9000, sertifikasi iso sekolah, sertifikasi i.jpeg" alt="Artikel 3">
+                    <div>Sertifikasi iso Dilakukan Untuk meningkatkan Kapasitas dan Soft Skill Karyawan</div>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <h2>Search</h2>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <button type="button">Go</button>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>Support : Berita Indonesia, Dribble, Pinterest</p>
+    </footer>
+</body>
+</html>
